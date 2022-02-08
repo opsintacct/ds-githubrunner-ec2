@@ -37,7 +37,7 @@ vpc_id                = "vpc-xxxxxx"
 instance_type         = "t2.micro"
 key_name              = # your KeyPair name
 github_repo_pat_token = # The GitHub Repository's Pat Token for which you want to register GitHub Runners with to authenticate
-github_repo_url       = "https://github.com/intacct/{repo}"
+github_repo_url       = "https://github.com/{owner}/{repo}"
 runner_name           = "gitHub-repo-runner"
 subnets_private        = ["subnet-private1","subnet-private2","subnet-private3"]
 labels                = ["dev", "infra"]
@@ -48,7 +48,7 @@ min_size                  = 1
 max_size                  = 4
 ```
 
-where owner is intacct and repo represents the GitHub Repository.
+where owner is org  and repo represents the GitHub Repository.
 
 
 
