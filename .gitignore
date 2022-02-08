@@ -1,0 +1,4 @@
+locals.auto.tfvars
+.terraform*
+terraform*
+.vscode
